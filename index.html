@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biosphere Simulator — Guide Your Dynasty Through 12,000 Years of History</title>
+  <meta name="description" content="A turn-based dynasty simulator. Place your family on the River of Time and guide them from prehistoric survival to the modern world. Coming to Steam.">
+  <meta property="og:title" content="Biosphere Simulator">
+  <meta property="og:description" content="Guide one bloodline from the banks of ancient Mesopotamia to the modern world. A turn-based dynasty simulator coming to Steam.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Biosphere Simulator</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#eras">Eras</a>
+        <a href="#dynasty">Dynasty</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#wishlist" class="btn btn-sm">Wishlist on Steam</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <p class="hero-pre">A Turn-Based Dynasty Simulator</p>
+      <h1 class="hero-title">Biosphere<br><span>Simulator</span></h1>
+      <p class="hero-tagline">Place your family on the River of Time.<br>Guide them from prehistoric survival to the modern world.<br><em>One generation at a time.</em></p>
+      <div class="hero-cta">
+        <a href="#wishlist" class="btn btn-primary btn-lg">Wishlist on Steam</a>
+        <a href="#about" class="btn btn-outline btn-lg">Learn More</a>
+      </div>
+      <div class="hero-platforms">
+        <span>Coming to</span>
+        <span class="platform-tag">Steam</span>
+        <span class="platform-tag">Windows</span>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-indicator"></div>
+    </div>
+  </header>
+
+  <!-- ABOUT / NARRATIVE -->
+  <section class="section section-about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">The Vision</span>
+        <h2>What Would You Sacrifice<br>for the Next Generation?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="lead">Biosphere Simulator is a game about legacy. Not conquering empires &mdash; but the intimate, human-scale story of one family's journey through all of human history.</p>
+          <p>The river flows. The current pushes your family toward the Falls &mdash; a waterfall at the edge of oblivion. Every turn, you must decide: spend your resources keeping yourself alive, or invest in your children's future.</p>
+          <p>Raise children with names, personalities, and ambitions. Arrange marriages that secure your bloodline. Watch your settlement grow from a lean-to shelter into a thriving civilization. Make choices that echo across twenty generations.</p>
+          <p>Starting on the muddy banks of prehistoric Mesopotamia and ending in the industrial age, Biosphere Simulator asks one question: <strong>can your dynasty survive the river?</strong></p>
+        </div>
+        <div class="about-card">
+          <div class="card-inner">
+            <div class="card-stat">
+              <span class="stat-number">12,000</span>
+              <span class="stat-label">Years of History</span>
+            </div>
+            <div class="card-stat">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Generations per Dynasty</span>
+            </div>
+            <div class="card-stat">
+              <span class="stat-number">4</span>
+              <span class="stat-label">Distinct Eras</span>
+            </div>
+            <div class="card-stat">
+              <span class="stat-number">~1hr</span>
+              <span class="stat-label">Per Complete Run</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RIVER DIAGRAM -->
+  <section class="section section-river">
+    <div class="container">
+      <div class="river-visual">
+        <div class="river-label">The River of Time</div>
+        <div class="river-channels">
+          <div class="channel channel-4">
+            <span class="channel-name">Royal Rapids</span>
+            <span class="channel-desc">Rulers &amp; dynasty heads. Best rewards, hardest to survive.</span>
+          </div>
+          <div class="channel channel-3">
+            <span class="channel-name">Deep Channel</span>
+            <span class="channel-desc">Scholars, priests, administrators. Better treasures, stronger current.</span>
+          </div>
+          <div class="channel channel-2">
+            <span class="channel-name">Main Current</span>
+            <span class="channel-desc">Craftsmen and merchants. Balanced risk and reward.</span>
+          </div>
+          <div class="channel channel-1">
+            <span class="channel-name">The Shallows</span>
+            <span class="channel-desc">Laborers and gatherers. Easiest to survive, fewest rewards.</span>
+          </div>
+        </div>
+        <div class="river-falls">
+          <span>The Falls</span>
+          <small>Oblivion awaits</small>
+        </div>
+        <div class="river-arrow">
+          <span>Current &rarr;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section section-features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Core Features</span>
+        <h2>A Dynasty Simulator<br>With Real Depth</h2>
+      </div>
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.84 0-16-7.16-16-16S15.16 8 24 8s16 7.16 16 16-7.16 16-16 16z" fill="currentColor" opacity=".3"/><path d="M24 12v12l8 4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          </div>
+          <h3>The River of Time</h3>
+          <p>A horizontal river flows relentlessly toward the Falls. Four channels represent social standing &mdash; from scraping by in the Shallows to ruling from the Royal Rapids. Fight the current or be consumed.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 4l-8 14h16L24 4z" fill="currentColor" opacity=".3"/><path d="M16 18l-8 14h32l-8-14" fill="currentColor" opacity=".2"/><path d="M8 32l-4 12h40l-4-12" fill="currentColor" opacity=".1"/><circle cx="24" cy="10" r="2" fill="currentColor"/></svg>
+          </div>
+          <h3>Raise Real Children</h3>
+          <p>Every child has a name, personality, backstory, and ambitions. Teach them, send them exploring, or put them to work. Unequal treatment breeds sibling rivalry. Balanced investment builds a stable family.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 8c-5.52 0-10 4.48-10 10 0 7.4 10 22 10 22s10-14.6 10-22c0-5.52-4.48-10-10-10z" fill="currentColor" opacity=".3"/><circle cx="24" cy="18" r="4" fill="currentColor"/></svg>
+          </div>
+          <h3>Strategic Marriage</h3>
+          <p>Political alliances. Love matches. Power plays. Finding the right spouse isn't a checkbox &mdash; it's a genuine dilemma that determines your dynasty's future every single generation.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="24" width="8" height="16" rx="1" fill="currentColor" opacity=".2"/><rect x="20" y="16" width="8" height="24" rx="1" fill="currentColor" opacity=".3"/><rect x="32" y="8" width="8" height="32" rx="1" fill="currentColor" opacity=".4"/></svg>
+          </div>
+          <h3>Build Your Settlement</h3>
+          <p>Watch your civilization evolve from a lean-to shelter to a thriving settlement. 14 building categories unlock as you craft milestones. Your choices shape the skyline.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 36l8-12 8 8 8-16 8 20" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="24" r="3" fill="currentColor" opacity=".3"/><circle cx="32" cy="16" r="3" fill="currentColor" opacity=".3"/></svg>
+          </div>
+          <h3>Legacy That Compounds</h3>
+          <p>Education invested in children compounds across generations. A dynasty that prioritizes knowledge early reaps massive rewards later. 42 permanent upgrades shape your family's trajectory.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M12 8h24v32H12z" fill="currentColor" opacity=".15" rx="2"/><path d="M18 16h12M18 22h12M18 28h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 8h24v6H12z" fill="currentColor" opacity=".3" rx="2"/></svg>
+          </div>
+          <h3>70+ Narrative Events</h3>
+          <p>Choose-your-own-adventure encounters with real consequences. Storms, rival clashes, suitors, ancient ruins. No optimal choice &mdash; every decision is a tradeoff that ripples across generations.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="16" cy="20" r="8" fill="currentColor" opacity=".2"/><circle cx="32" cy="20" r="8" fill="currentColor" opacity=".3"/><path d="M16 32c0-4.42 3.58-8 8-8s8 3.58 8 8" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+          </div>
+          <h3>Rival Dynasties</h3>
+          <p>NPC families share the river. They compete for treasures, block your path, or become powerful allies. Ambitious, cooperative, territorial, or scholarly &mdash; each rival has a personality.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 4l4 8h8l-6 6 2 8-8-4-8 4 2-8-6-6h8z" fill="currentColor" opacity=".3"/></svg>
+          </div>
+          <h3>Artifacts &amp; Companions</h3>
+          <p>Discover ancient artifacts with permanent dynasty bonuses. Equip items from common to legendary. Adopt pet companions &mdash; loyal hounds, temple cats, and hawks that aid your journey.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ERAS -->
+  <section class="section section-eras" id="eras">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Journey Through Time</span>
+        <h2>Four Eras. Twelve Millennia.<br>One Bloodline.</h2>
+      </div>
+      <div class="eras-timeline">
+
+        <div class="era-card" data-era="prehistoric">
+          <div class="era-number">I</div>
+          <div class="era-content">
+            <div class="era-period">10,000 &ndash; 3,000 BC</div>
+            <h3>The Prehistoric Age</h3>
+            <p>Survival is everything. Hunt mammoths, forage for roots, tend the fire. Your family scrapes by in the Shallows with nothing but stone tools and determination. Every resource matters. Every child is hope.</p>
+            <div class="era-resources">
+              <span>Gathering</span><span>Hunting</span><span>Family</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="era-card" data-era="bronze">
+          <div class="era-number">II</div>
+          <div class="era-content">
+            <div class="era-period">3,000 &ndash; 1,200 BC</div>
+            <h3>The Bronze Age</h3>
+            <p>Civilization dawns along the river. Build houses from mud-brick, irrigate fields, craft pottery. Your settlement takes shape. Trade caravans arrive. But rival families eye your growing wealth.</p>
+            <div class="era-resources">
+              <span>Materials</span><span>Farming</span><span>Building</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="era-card" data-era="medieval">
+          <div class="era-number">III</div>
+          <div class="era-content">
+            <div class="era-period">500 &ndash; 1,400 AD</div>
+            <h3>The Medieval Age</h3>
+            <p>Castles rise. Armies march. Faith and steel determine who rules. Conscript soldiers, forge alliances, navigate court politics. The current runs fast &mdash; and the Falls are always waiting.</p>
+            <div class="era-resources">
+              <span>Military</span><span>Trade</span><span>Faith</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="era-card" data-era="modern">
+          <div class="era-number">IV</div>
+          <div class="era-content">
+            <div class="era-period">1,600 &ndash; 1,900 AD</div>
+            <h3>The Early Modern Era</h3>
+            <p>Industry roars. Diplomacy decides the fate of nations. Govern, barter, build an empire. All eight resource types are in play. Your dynasty either shapes the modern world &mdash; or is swept away by it.</p>
+            <div class="era-resources">
+              <span>Politics</span><span>Industry</span><span>Science</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DYNASTY SYSTEM -->
+  <section class="section section-dynasty" id="dynasty">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">The Core Tension</span>
+        <h2>Every Token Spent on Yourself<br>Is One Not Spent on Your Children</h2>
+      </div>
+      <div class="dynasty-grid">
+        <div class="dynasty-card">
+          <h3>The Impossible Choice</h3>
+          <p>The Falls are closing in. You have three tokens. Spend them to push upstream and survive &mdash; or invest in your daughter's education so she'll thrive when you're gone. This isn't a puzzle. It's a family.</p>
+        </div>
+        <div class="dynasty-card">
+          <h3>Generational Compounding</h3>
+          <p>A child educated in irrigation produces more tokens as an adult. Their children inherit those skills. Fifteen generations of careful investment creates a dynasty that shapes civilization. Short-term sacrifice, long-term legacy.</p>
+        </div>
+        <div class="dynasty-card">
+          <h3>Permadeath With Purpose</h3>
+          <p>When your elder is swept over the Falls, it means something. When a favorite child starves because you chose wrong, you feel it. Hard but fair. Every loss teaches you something for the next dynasty.</p>
+        </div>
+      </div>
+
+      <!-- DYNASTY RATING -->
+      <div class="rating-showcase">
+        <h3>Dynasty Ratings</h3>
+        <p class="rating-intro">How will history remember your family?</p>
+        <div class="rating-tiers">
+          <div class="rating-tier tier-forgotten">
+            <span class="tier-name">Forgotten</span>
+            <span class="tier-desc">Your family barely scraped by</span>
+          </div>
+          <div class="rating-tier tier-remembered">
+            <span class="tier-name">Remembered</span>
+            <span class="tier-desc">A modest dynasty, a footnote in history</span>
+          </div>
+          <div class="rating-tier tier-notable">
+            <span class="tier-name">Notable</span>
+            <span class="tier-desc">Your name is known across the land</span>
+          </div>
+          <div class="rating-tier tier-legendary">
+            <span class="tier-name">Legendary</span>
+            <span class="tier-desc">Songs are sung of your lineage</span>
+          </div>
+          <div class="rating-tier tier-eternal">
+            <span class="tier-name">Eternal</span>
+            <span class="tier-desc">Your dynasty shaped civilization itself</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="section section-screenshots" id="screenshots">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">In Development</span>
+        <h2>Glimpses of the River</h2>
+      </div>
+      <div class="screenshots-grid">
+        <div class="screenshot-placeholder">
+          <div class="placeholder-inner">
+            <span>River Board Gameplay</span>
+            <small>Navigate stepping stones across four channels</small>
+          </div>
+        </div>
+        <div class="screenshot-placeholder">
+          <div class="placeholder-inner">
+            <span>Settlement View</span>
+            <small>Watch your civilization grow from nothing</small>
+          </div>
+        </div>
+        <div class="screenshot-placeholder">
+          <div class="placeholder-inner">
+            <span>Narrative Events</span>
+            <small>Choose-your-own-adventure encounters</small>
+          </div>
+        </div>
+        <div class="screenshot-placeholder">
+          <div class="placeholder-inner">
+            <span>Legacy Tree</span>
+            <small>42 permanent upgrades across generations</small>
+          </div>
+        </div>
+      </div>
+      <p class="screenshots-note">Screenshots coming soon. The game is in active development.</p>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section class="section section-comparison">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">For Fans Of</span>
+        <h2>If You Love These,<br>You'll Love This</h2>
+      </div>
+      <div class="comparison-grid">
+        <div class="comp-card">
+          <h3>Civilization</h3>
+          <p>The "one more turn" pull. But instead of empires, you're managing a single family's journey through all of history.</p>
+        </div>
+        <div class="comp-card">
+          <h3>Crusader Kings</h3>
+          <p>Dynasty drama. Sibling rivalries, political marriages, succession crises. But distilled into a meditative ~1 hour experience.</p>
+        </div>
+        <div class="comp-card">
+          <h3>Banished / Dawn of Man</h3>
+          <p>The quiet satisfaction of building from nothing. Watching your settlement evolve from shelter to village to civilization.</p>
+        </div>
+        <div class="comp-card">
+          <h3>7 Grand Steps</h3>
+          <p>The spiritual successor. Same generational vision, reimagined with deeper family systems, 4 eras, and a clearer river metaphor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WISHLIST CTA -->
+  <section class="section section-wishlist" id="wishlist">
+    <div class="container">
+      <div class="wishlist-content">
+        <h2>Guide Your Dynasty Through<br>12,000 Years of History</h2>
+        <p>Biosphere Simulator is in active development. Wishlist now to be notified at launch.</p>
+        <div class="wishlist-cta">
+          <a href="#" class="btn btn-primary btn-xl">Wishlist on Steam</a>
+        </div>
+        <div class="wishlist-details">
+          <div class="detail">
+            <strong>Price</strong>
+            <span>$9.99</span>
+          </div>
+          <div class="detail">
+            <strong>Platform</strong>
+            <span>Windows (Mac/Linux TBD)</span>
+          </div>
+          <div class="detail">
+            <strong>Developer</strong>
+            <span>indie.io</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section section-newsletter">
+    <div class="container">
+      <div class="newsletter-box">
+        <h3>Stay Connected</h3>
+        <p>Get development updates, behind-the-scenes posts, and launch announcements.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <small>No spam. Unsubscribe anytime.</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo">Biosphere Simulator</span>
+          <p>A turn-based dynasty simulator by indie.io</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">Steam</a>
+          <a href="#">Twitter / X</a>
+          <a href="#">Discord</a>
+          <a href="#">Press Kit</a>
+        </div>
+        <div class="footer-copy">
+          <p>&copy; 2025-2026 indie.io. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
